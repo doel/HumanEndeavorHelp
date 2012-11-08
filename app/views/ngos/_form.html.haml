@@ -1,0 +1,14 @@
+%p
+  = f.label :address
+  = f.text_field :address
+%p
+  = f.label :latitude 
+  = f.text_field :latitude
+%p
+  = f.label :longitude
+  = f.text_field :longitude
+%p
+  = select_tag :category, options_for_select(options_for_ngos(@categories)), :id => 'category_id'
+%p
+  = f.submit
+  
